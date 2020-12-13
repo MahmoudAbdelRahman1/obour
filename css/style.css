@@ -1,0 +1,828 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    background-image: url("/img/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bacground-z
+{
+    background: linear-gradient(rgba(10, 0, 107, 0.47) 0%, rgba(51, 32, 236, 0.86) 41.42%, #321fec 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.nav-min
+{
+    width: 98px;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    border-radius: 10px;
+    
+}
+.nav-min ul
+{
+    list-style: none;
+    padding: 0;
+    position: relative;
+    left: -1%;
+}
+.nav-min ul li
+{
+    width: 78px;
+    height: 78px;
+    background: transparent;
+    border: 3px solid #321fec;
+    margin: 40px auto;
+    border-radius: 50%;
+    text-align: center;
+    padding: 17px;
+}
+.nav-min ul li i
+{
+    font-size: 35px;
+    color: #321fec;
+}
+.nav-min a
+{
+    font-family: Almarai;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    color: #321fec; 
+    position: relative;
+    top: 27%;
+    text-decoration: none;   
+}
+/**/
+.nav-min ul li.act-li
+{
+    background-color: #321fec;
+}
+.nav-min ul li i.act-icon
+{
+    color: #ffffff;
+}
+/**/
+.titel-text .box-titel
+{
+    width: 1120px;
+    height: 240px;
+    position: absolute;
+    top: 50%;
+    left: 59%;
+    transform: translate(-50%,-50%);
+}
+.box-titel h3
+{
+    font-family: Almarai;
+    font-weight: normal;
+    font-size: 95px;
+    text-align: left;
+    color: #fff;
+    padding: 10px;
+}
+.box-titel .smole-P
+{
+    width: 967px;
+    height: 74px;
+    position: relative;
+    padding:5px;
+}
+.smole-P p
+{
+    font-family: Almarai;
+    font-weight: 300;
+    font-size: 38px;
+    text-align: center;
+    color: #eb2811;
+    margin: 10px auto;
+}
+.search
+{
+    width: 483px;
+    height: 376px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    visibility: hidden;
+    left: -10%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    padding-right: 40px;
+    transition: 0.3s;
+}
+.search .box-search
+{
+    width: 332px;
+    height: 266px;
+    padding: 10px;
+    position: absolute;
+}
+/**/
+.search.act-minsearch
+{
+    left: 50%;
+    visibility: unset;
+    transition: 2s;
+}
+/**/
+.box-search .text-search
+{
+    width: 96px;
+    height: 32px;
+    background: #fff;
+    position: absolute;
+    left: 70%;
+    
+}
+.text-search p
+{
+    font-family: Almarai;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    color: #321fec;
+}
+.box-search .input-search
+{
+    width: 332px;
+    height: 61px;
+    position: absolute;
+    top: 19%;
+    left: 0%;
+}
+.input-search .inp-s
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid #321fec;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: end;
+    cursor: pointer; 
+    z-index: 2;
+}
+.inp-s span
+{
+    font-family: Almarai;
+    font-weight: 300;
+    font-size: 30px;
+    color: #321fec;
+}
+.inp-s i
+{
+    position: absolute;
+    left:2%;
+    font-size: 30px;
+    color:#321fec;
+}
+.input-search .inps
+{
+    width: 332px;
+    height: 180px;
+    position: relative;
+    top: 10%;
+    border-radius: 5px;
+    visibility: hidden;
+    z-index: 2;
+}
+.inps div
+{
+    width: 332px;
+    height: 60px;
+    padding: 5px;
+    background-color: #321fec;
+    border: 1px solid #ffffff;
+    text-align: end;
+}
+.inps div span
+{
+    font-family: Almarai;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff
+}
+/***/
+.inps div:hover 
+{
+    background-color: #5b4ce7;
+}
+.input-search .inps.actinps
+{
+    visibility: unset;
+    z-index: 2;
+}
+/***/
+.search .cours
+{
+    width: 393px;
+    height: 180px;
+    position: absolute;
+    top: 35%;
+    padding: 5px;
+    
+} 
+.cours .text-cours
+{
+    width: 186px;
+    height: 30px;
+    position: relative;
+    left: 50%;
+    
+}
+.text-cours p
+{
+    font-family: Almarai;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    color: #321fec;
+}
+.cours .box-cours
+{
+    width: 385px;
+    height: 144px;
+    background: transparent;
+    overflow: scroll;
+}
+::-webkit-scrollbar
+{
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: #321fec;
+    border-radius: 30px;
+    width: 40px;
+}
+.box-cours ul
+{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.box-cours ul li
+{
+    width: 115px;
+    height: 62px;
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid #321fec;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: Almarai;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    color: #321fec;
+}
+.box-cours ul li.actcs
+{
+    color: #ffffff;
+    background-color: #321fec;
+}.search .but-search
+{
+    width: 138px;
+    height: 63px;
+    position: absolute; 
+    top: 82%; 
+    left: 35%; 
+}
+.but-search button
+{
+   width: 136px;
+    height: 61px;
+    border-radius: 23px;
+    background: #ff5e4b;
+    outline: none;
+    border: none;
+}
+.e-x button
+{
+    width: 39px;
+    height: 25px;
+    background: #eb2811;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    outline: none;
+    border: none;
+}
+.minbox-search
+{
+    width: 57%;
+    top: 5%;
+    left: 25%;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    visibility: hidden;
+}
+
+/**/
+.minbox-search.actinfo
+{
+    visibility: unset;
+}
+/**/
+.iconT
+{
+    width: 149px;
+    height: 33px;
+    position: absolute;
+    position: absolute;
+    top: -17%;
+    left: 78%;
+    
+}
+.iconT ul
+{
+    list-style: none;
+    display: flex;
+}
+.iconT ul li 
+{
+    width: 39px;
+    height: 29px;
+    border-radius: 10px 10px 0px 0px;
+    background: #5cfc5c;
+    margin: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.iconT ul .iii
+{
+    background: #0a9dff;
+}
+.iconT ul .i
+{
+    background: #eb2811;
+;
+}
+.minbox-search .search-info
+{
+    width: 684px;
+    height: 217px;
+    margin-top: 50px;
+    border-radius: 5px;
+    border: 1px solid #321fec;
+    position: relative;
+    top: 0%;
+}
+.search-info .img-info
+{
+    width: 237px;
+    height: 217px;
+    border-radius: 5px 70px 70px 5px;
+    border: 1px solid #321fec;
+}
+.search-info .text-box
+{
+    width: 153px;
+    height: 210px;
+    border-radius: 5px;
+    position: relative;
+    top: -100%;
+    left: 76%;
+}
+.text-box ul
+{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-box ul li
+{
+    height: 40px;
+    width: 150px;
+    height: 40px;
+    font-family: Almarai;
+    font-weight: 300;
+    font-size: 25px;
+    text-align: end;
+    color: #321fec;
+    margin: 7px;      
+}
+.search-info .text-info
+{
+    width: 274px;
+    height: 215px;
+    position: absolute;
+    top: 0%;
+    left: 37%;
+}
+.text-info ul
+{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-info ul li
+{
+    width: 283px;
+    height: 40px;
+    font-family: Almarai;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: right;
+    color: #321fec;
+    margin: 7px; 
+    
+}
+.text-info ul li div
+{
+    width: 78px;
+    height: 40px;
+    border-radius: 14px;
+    background: #321fec;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+    padding: 3px;
+    float: left;
+    margin:auto;
+    margin-right: 5px;
+}
+.minbox-search .ex button
+{
+    width: 50px;
+    height: 37px;
+    background: #eb2811;
+    position: absolute;
+    left: 0%;
+    outline: none;
+    border: none;
+}
+.student
+{
+    width: 597px;
+    height: 550px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    transition: 1s;
+}
+/**/
+.student.ex-student
+{
+    visibility: unset;
+    left: 50%;
+    transition: 2s;
+
+}
+/**/
+.butExinfo button
+{
+    width: 51px;
+    height: 46px;
+    background: #eb2811;
+    position: absolute;
+    outline: none;
+    border: none;
+}
+.student .titel-st
+{
+    width: 541px;
+    height: 51px;
+    float: right;    
+}
+.titel-st p
+{
+    width: 545px;
+    height: 39px;
+    font-family: Almarai;
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+    color: #321fec;
+}
+.student .box-input-st
+{
+    width: 457px;
+    height: 271px;
+    position: absolute;
+    top: 37%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+}
+.student .box-input-st ul 
+{
+    list-style: none;
+    padding: 1px;
+    display: flex;
+    flex-wrap: wrap; 
+}
+.student .box-input-st ul li input
+{
+    width: 187px;
+    height: 45px;
+    border-radius: 5px;
+    background: #fff;
+    border: 2px solid #321fec;
+    margin: auto;
+    margin: 19px;
+    font-family: Almarai;
+    font-size: 18px;
+    text-align: right;
+    color: #321fec;
+    padding: 3px;
+    outline: none;
+    
+}
+::-webkit-input-placeholder
+{
+    color: #321fec; 
+}
+.student .box-cours-st
+{
+    width: 501px;
+    height: 99px;
+    position: absolute;
+    top: 70%;
+    left: 52%;
+    transform: translate(-50%,-50%);  
+}
+.box-cours-st .title-cours-st
+{
+    width: 89px;
+    height: 33px;
+    float: right;    
+}
+.title-cours-st p
+{
+    font-family: Almarai;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    color: #321fec;
+}
+.ul-cours
+{
+    width: 493px;
+    height: 75px;
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid #321fec;
+    position: absolute;
+    top: 30%;
+    overflow: scroll;
+}
+.ul-cours ul 
+{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.ul-cours ul li 
+{
+    width: 100px;
+    height: 39px;
+    border-radius: 5px;
+    background: #321fec;
+    margin: 5px; 
+    font-family: Almarai;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    padding: 7px;
+}
+.but-send
+{
+    width: 596px;
+    height: 94px;
+    position: absolute;
+    top: 163%;
+    left: 47%;
+    transform: translate(-50%,-50%);
+}
+.but-send button
+{
+    width: 506px;
+    height: 51px;
+    border-radius: 10px;
+    background: #eb2811;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    outline: none;
+    border: none;
+    font-family: Almarai;
+    font-weight: 300;
+    font-size: 39px;
+    text-align: center;
+    color: #fff;
+}
+.jobs
+{
+    width: 967px;
+    height: 768px;
+    background: #ebebeb;
+    position: absolute;
+    top: 50%;
+    left: -60%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    transition: 1s;
+}
+.jobs.actJobs
+{
+    visibility:unset;
+    left: 50%;
+    transition: 1.2s;
+}
+.jobs .ex-job button
+{
+    width: 53px;
+    height: 32px;
+    background: #eb2811;
+    position: relative;
+    outline: none;
+    border: none; 
+}
+.jobs .box-job
+{
+    width: 946px;
+    height: 239px;
+    background: #fff;
+    border: 2px solid #321fec;
+    margin: auto;
+}
+.box-job .img-job
+{
+    width: 210px;
+    height: 235px;
+}
+.box-job .job-text
+{
+    width: 692px;
+    height: 219px;
+    position: relative;
+    top: -95%;
+    float: right;
+}
+.job-text .job-te
+{
+    width: 233px;
+    height: 61px;
+    float: right;
+}
+.job-text .job-te p
+{
+    font-family: Almarai;
+    font-weight: 300;
+    font-size: 44px;
+    text-align: center;
+    color: #1fecec;
+}
+.job-tee
+{
+    width: 696px;
+    height: 145px;
+    margin-top:60px;
+    padding: 5px;
+    position: relative;
+    left: -10%;
+}
+.job-tee p
+{
+    width: 743px;
+    height: 132px;
+    font-family: Almarai;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: right;
+    color: #321fec;  
+}
+.log-jobs
+{
+    width: 1013px;
+    height: 482px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: -120%;
+    transform: translate(-50%,-50%); 
+    visibility: hidden;
+    transition: 1s;
+}
+.log-jobs.actjob
+{
+    left: 50%;
+    visibility: visible;
+    transition: 0.7s;
+}
+.log-jobs .ex-log button
+{
+    width: 74px;
+    height: 57px;
+    background: #eb2811;
+    border: none;
+    outline: none;     
+}
+.log-jobs .title-log
+{
+    width: 623px;
+    height: 56px;
+    margin: auto;
+}
+.title-log p
+{
+    font-family: Almarai;
+    font-weight: 300;
+    font-size: 44px;
+    text-align: center;
+    color: #321fec;
+}
+.log-jobs .box-log
+{
+    width: 914px;
+    height: 287px;
+    background: #574cbe;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+}
+.log-jobs .box-ul-log
+{
+    width: 914px;
+    height: 68px;
+    background: transparent;
+}
+.box-ul-log ul 
+{
+    list-style: none;
+    display: flex;
+}
+.box-ul-log ul li input
+{
+    width: 201px;
+    height: 49px;
+    border-radius: 7px;
+    background: #fcfcfc;
+    margin: 7px auto;
+    margin-left: 23px;
+    font-family: Almarai;
+    font-weight: 300;
+    font-size: 22px;
+    text-align: right;
+    color: #9c92ff;
+    outline: none;
+    padding: 5px;
+}
+.box-text textarea
+{
+    width: 889px;
+    height: 198px;
+    border-radius: 20px;
+    background: #fff;
+    border: 1px solid #707070;
+    font-family: Almarai;
+    padding: 10px;
+    font-size: 22px;
+    text-align: right;
+    color: #9c92ff;
+    outline: none;
+}
+.but-log button
+{
+    width: 686px;
+    height: 55px;
+    border-radius: 20px;
+    background: #eb2811;
+    position: absolute;
+    top: 113%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    outline: none;
+    border: none;
+    font-family: Almarai;
+    font-size: 42px;
+    text-align: center;
+    color: #fff;
+    
+}
